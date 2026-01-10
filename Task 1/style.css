@@ -1,0 +1,150 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.logo{
+    background-image: url('maincrafts\ logo.jpeg');
+    height: 30px;
+    width: 180px;
+    background-size: cover;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.menu a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    
+}
+.menu a:hover {
+    color: #4a4aff;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #fff;
+    top: 30px;
+    padding: 10px 0;
+    border-radius: 6px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    min-width: 150px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content li {
+    padding: 10px 20px;
+}
+.dropdown-content li:hover {
+    background: #efefef;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: linear-gradient(120deg, #010e48, #d550cf);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.hero button {
+    padding: 12px 28px;
+    border: none;
+    background: #fff;
+    color: #333;
+    font-weight: 900;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hero button:hover {
+    transform: translateY(-3px);
+}
+
+/* Features Section */
+.features {
+    padding: 60px 8%;
+    text-align: center;
+}
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.feature-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.feature-card {
+    background: #fff;
+    width: 260px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+.feature-card i {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+}
+footer a {
+    color: #aaa;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.3rem; }
+    .menu { display: none; } /* You can add hamburger here later */
+}
