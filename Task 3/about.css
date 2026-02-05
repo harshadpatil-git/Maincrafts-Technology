@@ -1,0 +1,147 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    overflow: visible;
+}
+
+.logo{
+    background-image: url('maincrafts\ logo.jpeg');
+    height: 30px;
+    width: 180px;
+    background-size: cover;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.menu a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    
+}
+.menu a:hover {
+    color: #4a4aff;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    list-style: none;
+    display: none;
+    position: absolute;
+    background: #fff;
+    top: 30px;
+    padding: 10px 0;
+    border-radius: 6px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    min-width: 150px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+.dropdown-content li {
+    padding: 10px 20px;
+}
+.dropdown-content li:hover {
+    background: #efefef;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10%;
+  background: linear-gradient(135deg, #061E5C, #0E53A7, #2FB7E1);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+
+.btn.primary {
+  background: white;
+  color: #0E53A7;
+}
+
+.btn.secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #d9e7ff;
+}
+
+.btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+}
+footer a {
+    color: #aaa;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.3rem; }
+    .menu { display: none; } /* You can add hamburger here later */
+}

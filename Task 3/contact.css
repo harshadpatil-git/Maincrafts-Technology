@@ -1,0 +1,148 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    overflow: visible;
+}
+
+.logo{
+    background-image: url('maincrafts\ logo.jpeg');
+    height: 30px;
+    width: 180px;
+    background-size: cover;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.menu a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    
+}
+.menu a:hover {
+    color: #4a4aff;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    list-style: none;
+    display: none;
+    position: absolute;
+    background: #fff;
+    top: 30px;
+    padding: 10px 0;
+    border-radius: 6px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    min-width: 150px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+.dropdown-content li {
+    padding: 10px 20px;
+}
+.dropdown-content li:hover {
+    background: #efefef;
+}
+
+/* Hero */
+.contact-section {
+    height: 100vh;
+  padding: 60px 10%;
+  background: #f4f7ff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #0E53A7;
+  font-weight: 700;
+}
+
+.contact-section p {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+#contactForm input, #contactForm textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+#contactForm input:focus, #contactForm textarea:focus {
+  border-color: #0E53A7;
+  outline: none;
+}
+
+#contactForm button {
+  width: 100%;
+  padding: 12px;
+  background: #0E53A7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#contactForm button:hover {
+  background: #063a80;
+}
+
+
+/* Footer */
+footer {
+    background: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+}
+footer a {
+    color: #aaa;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.3rem; }
+    .menu { display: none; } /* You can add hamburger here later */
+}
